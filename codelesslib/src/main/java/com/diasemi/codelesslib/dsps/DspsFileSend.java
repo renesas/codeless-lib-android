@@ -425,7 +425,7 @@ public class DspsFileSend {
         started = true;
         if (CodelessLibLog.DSPS)
             Log.d(TAG, manager.getLogPrefix() + "Start file send: " + this);
-        chunk = -1;
+        chunk = period > 0 ? -1 : 0;
         startTime = new Date().getTime();
         if (CodelessLibConfig.DSPS_STATS) {
             lastInterval = startTime;
