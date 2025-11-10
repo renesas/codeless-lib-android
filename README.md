@@ -19,7 +19,7 @@ For more information on how to use the library, refer to the documentation of th
 **See also:** [CodeLess User Manual](https://lpccs-docs.renesas.com/UM-140-DA145x-CodeLess/index.html)
 
 **Note:**
-There is also a [CodeLess&trade; library for iOS](https://github.com/dialog-semiconductor/codeless_lib_ios) development, which is written in Objective-C.
+There is also a [CodeLess&trade; library for iOS](https://github.com/renesas/codeless-lib-ios) development, which is written in Objective-C.
 While class names may be slightly different and the API uses the Objective-C syntax, the iOS
 library behavior is similar to the Android one, except for some platform specific cases.
 

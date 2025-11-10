@@ -3,14 +3,14 @@ plugins {
 }
 
 android {
-    namespace 'com.diasemi.codelesslib'
-    compileSdkVersion 33
-    buildToolsVersion "33.0.2"
+    namespace = 'com.diasemi.codelesslib'
+    compileSdk 35
+    buildToolsVersion "36.0.0"
 
     defaultConfig {
-        minSdkVersion 19
-        targetSdkVersion 33
-        versionName "3.530.10"
+        minSdk 19
+        targetSdk 35
+        versionName "3.530.12"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         consumerProguardFiles 'consumer-rules.pro'
