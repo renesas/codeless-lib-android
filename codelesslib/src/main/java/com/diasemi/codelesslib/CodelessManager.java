@@ -2550,8 +2550,9 @@ public class CodelessManager {
         if (status == BluetoothGatt.GATT_SUCCESS) {
             Log.d(TAG, logPrefix + "MTU changed to " + mtu);
             this.mtu = mtu;
-            if (CodelessLibConfig.DSPS_CHUNK_SIZE_INCREASE_TO_MTU || dspsChunkSize > mtu - 3)
-                dspsChunkSize = mtu - 3;
+            int maxSize = Math.min(mtu - 3, 512);
+            if (CodelessLibConfig.DSPS_CHUNK_SIZE_INCREASE_TO_MTU || dspsChunkSize > maxSize)
+                dspsChunkSize = maxSize;
         } else {
             Log.e(TAG, logPrefix + "Failed to change MTU");
         }
